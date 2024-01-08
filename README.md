@@ -1,12 +1,16 @@
 # finpro-alpha
 Apha Group Purwadhika Final Project Repository
 
+
+### Collaborators:
+1. Dwika Widyantama
+2. Vinson Leo Veronal Jong
+
 # Used Cars Price Prediction for UK-based Online Car Marketplace
 --- 
 
 # **1. Introduction**
 ---
-## 1.1 Business & Context Understanding
 
 ###     Business Problem
 The client is an emerging online used car listing company, similar to platforms like OLX Autos, Carmudi, or Carsome.id. Their business model revolves around acquiring pre-owned vehicles in good condition at prices below market value, with the intention of reselling them on their platform at a higher price point.
@@ -91,17 +95,4 @@ Conclusion from Profit Analysis Case Study:
 - Feature Addition for Comprehensive Insights, Improve the model by introducing additional features such as car condition, previous ownership history, and accident records to provide a more comprehensive understanding of factors influencing used car prices.
 - Profit Optimization through Negotiation, Leverage the model's predicted base price during negotiations with car sellers. If the actual sales price surpasses the predicted price, the company stands to maximize profit margins, aligning with strategic financial goals
 - Forecasting Sales for a Car Dealership, Implement sales forecasting by multiplying the average selling price by the anticipated number of vehicles to be sold. This straightforward formula provides a revenue/sales forecast, aiding in strategic planning for the dealership's financial objectives.
-
-
-
-# NOTE 
-
-Merge New Code 
-Step by step melakukan merge Code baru ataupun adding new file 
-
-- Save Code yang sudah dikerjakan atau sedang dikerjakan
-- git add. (untuk menambahkan code baru melalui terminal)
-- git commit -m "Isi apa yang berubah atau ditambahkan" (memberikan note tentang apa saja yang berubah dalam bentuk judul)
-- git pull upstream main (melakukan pull terkait code baru yang ditambahkan oleh collaborator lainnya)
-- git push origin main (push code terbaru atau file terbaru ke main branch)
 
