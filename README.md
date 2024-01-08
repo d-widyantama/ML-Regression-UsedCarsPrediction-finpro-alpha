@@ -1,19 +1,16 @@
 # finpro-alpha
 Apha Group Purwadhika Final Project Repository
 
-# *NOTE*
-- Current project split into 2 versions 
-- [2. Cleaning](https://github.com/d-widyantama/finpro-alpha/blob/185755483490b39a1cc1fd248220f60bfe838f45/2%20-Cleaning.ipynb) , [3. EDA](https://github.com/d-widyantama/finpro-alpha/blob/185755483490b39a1cc1fd248220f60bfe838f45/3-EDA.ipynb) and [4. Modelling](https://github.com/d-widyantama/finpro-alpha/blob/185755483490b39a1cc1fd248220f60bfe838f45/4.%20Modeling.ipynb) for combined data of cclass.csv and merc.csv
-- V2 for uncombined data of cclass.csv andd focus.csv
 
-
+### Collaborators:
+1. Dwika Widyantama
+2. Vinson Leo Veronal Jong
 
 # Used Cars Price Prediction for UK-based Online Car Marketplace
 --- 
 
 # **1. Introduction**
 ---
-## 1.1 Business & Context Understanding
 
 ###     Business Problem
 The client is an emerging online used car listing company, similar to platforms like OLX Autos, Carmudi, or Carsome.id. Their business model revolves around acquiring pre-owned vehicles in good condition at prices below market value, with the intention of reselling them on their platform at a higher price point.
@@ -48,16 +45,54 @@ Note on Data Cleaning: The data cleaning process is documented in the notebook `
 - Both cclass.csv and focus.csv are contains different columns than the other files. Therefore, in the fisrt part of this project, the data cleaning process was done separately for these two cases where we will examine the data and applying it for modeling.
 
 
+# **2. Methodology**
+---
+#
+
+- **Data Collection and Cleaning:**
+  - Conducted data cleaning and feature engineering, addressing inconsistencies and preparing the data for analysis and modeling.
+  - Noted specific cleaning processes for 'cclass.csv' and 'focus.csv' files, handled separately due to distinct column structures.
+
+- **Exploratory Data Analysis (EDA):**
+  - Explored key features such as brand, mileage, and age of cars to uncover patterns and insights.
+  - Identified brand-specific pricing trends, revealing variations in average prices.
+  - Examined relationships between mileage, age, and prices to understand their impact on used car values.
+  - Documented findings related to brand-specific strengths and areas for improvement.
+
+- **Machine Learning Modeling:**
+  - Selected and tested seven regression models, including XGBoost Regressor, to predict used car prices.
+  - Evaluated model performance using metrics such as Mean Absolute Percentage Error (MAPE) and R-squared (R2).
+  - Concluded that XGBoost Regressor performed optimally with a low MAPE of 7% and high R2 of 96.8%.
+  - Analyzed brand-specific prediction errors, emphasizing strengths in Volkswagen and Mercedes-Benz predictions.
+
+- **Profit Analysis Case Study:**
+  - Investigated the potential impact of using the prediction model on profit margins.
+  - Calculated the profit opportunity, revealing a potential increase by 1495.43 or 78% on a single transaction.
+  - Emphasized the practical application of the model in negotiating with car sellers to maximize profits.
 
 
-# NOTE 
+# **3. Conclusion**
+---
+Conclusion from EDA:
+- Certain brands have higher average prices, such as and Mercedes-Benz.
+- Newer cars tend to have higher average sales prices, reflecting the common expectation that the value of a car decreases over time.
+- Cars with lower mileage tend to have higher average sales prices, reflecting the common expectation that the value of a car decreases as it is driven more.
 
-Merge New Code 
-Step by step melakukan merge Code baru ataupun adding new file 
+Conclusion from ML Modeling:
+- From the 7 model we've tested, XGBoost Regressor is found to be the best model with the lowest MAPE of 7% and R2 of 96.8%.
+- With errors as low as 7.02 % from model prediction output, the company can make well-informed decisions when acquiring used cars, optimizing the balance between competitive pricing and maintaining healthy profit margins.
+- The model shows better prediction results on certain brands. For example, the model shows <1% error results on Volkswagen,  and Mercedes-Benz. The model shows worse prediction results (>1%) on Skoda, Toyota, and Audi.
 
-- Save Code yang sudah dikerjakan atau sedang dikerjakan
-- git add. (untuk menambahkan code baru melalui terminal)
-- git commit -m "Isi apa yang berubah atau ditambahkan" (memberikan note tentang apa saja yang berubah dalam bentuk judul)
-- git pull upstream main (melakukan pull terkait code baru yang ditambahkan oleh collaborator lainnya)
-- git push origin main (push code terbaru atau file terbaru ke main branch)
+Conclusion from Profit Analysis Case Study:
+- The use of prediction model will potentially increase the profit opportunity by 1495.43 or **78% on a single transaction**.
+
+# **4. Recommendation**
+---
+
+
+- The model is better suited to predict the price of used cars from certain brands such as Volkswagen, and Mercedes-Benz.
+- Data Enrichment for Improved Brand Predictions, Expand the dataset to include more data points for other brands, especially those where the model currently exhibits higher prediction errors (e.g., Skoda, Toyota, Audi).
+- Feature Addition for Comprehensive Insights, Improve the model by introducing additional features such as car condition, previous ownership history, and accident records to provide a more comprehensive understanding of factors influencing used car prices.
+- Profit Optimization through Negotiation, Leverage the model's predicted base price during negotiations with car sellers. If the actual sales price surpasses the predicted price, the company stands to maximize profit margins, aligning with strategic financial goals
+- Forecasting Sales for a Car Dealership, Implement sales forecasting by multiplying the average selling price by the anticipated number of vehicles to be sold. This straightforward formula provides a revenue/sales forecast, aiding in strategic planning for the dealership's financial objectives.
 
